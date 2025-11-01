@@ -1,17 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 
-// Split base64 into shorter segments for readability
-const logo = "data:image/png;base64," +
-  "iVBORw0KGgoAAAANSUhEUgAAAHgAAAB4CAYAAABqhQtJAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFUklE" +
-  "QVR4nO2dz0tUWxzHf2fzCvXSUvAhTmtXqSg+ECn6iljBLxKuRXoVA8pmL+o9jC2w6TjNYU0XSpsHB1hh" +
-  "toBOcxKYRiypTDANtAFaWkeWfVCI9NsFRbqjp913e//0zPe+x7/+acfr/fB+jDdVt2/Nm3Djnnd85773" +
-  "ufc87Z0u14sWLFyGAyQJwNmQU3lvI5J+49A+OihGmD8f9n4fTvWHA/42HJ/l8z2nP4rZkfevp6RZ+uMm" +
-  "G4sC2TxJ9dFFYryonhPq0UPLp7eBuT91Xm1EMNLA9D0R2Lz9Ird7RDEmoxbXS83qzEaTDKDrJ+ZW5hkl" +
-  "9drSh4HJ1Es0zsNeNhNn9CoFwavqNzD9nGAcAR7db7KwX5PYdCaUvKe88W6vRqc38zVO7jshUJ4ZP0nu" +
-  "kmJTYYcMcqKgO03rBQ13rg2tqRvXN2bRwuB748uSUmU7VptfRplVge+uAs9vvLGt9E6HSRuzFqIrcLLX" +
-  "/02T1UQFsrX1yfKwQQt7uRL4/cW8mw0cO0m98pEfyMmXkH+48Lk4fCZ3dzho2scqcvNHeTDfPSydS8nt" +
-  "W9ShUe0ndyMb09NbnjwxSdxAI5a6TC8c5EWeBc8HnSM0yaPD9JkMuN38N++n6m4";
+const logo = "/logo.png";
 
 const Home: React.FC = () => {
   return (
@@ -30,7 +20,7 @@ const Home: React.FC = () => {
         <img
           src={logo}
           alt="LedgerAI Logo"
-          style={{ width: "120px", height: "120px", margin: "0 auto 1rem" }}
+          style={{ width: "80px", height: "80px", margin: "0 auto 1rem" }}
         />
         <h1 style={{ fontSize: "3rem", fontWeight: 700, marginBottom: "1rem" }}>
           LedgerAI
