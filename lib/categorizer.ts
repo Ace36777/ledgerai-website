@@ -1,8 +1,10 @@
 // Simple rule-based transaction categorization. Replace with ML model for production.
 export interface Transaction {
+  id?: string;
   description: string;
   amount: number;
   merchant?: string;
+  date?: string;
 }
 
 export interface CategoryPrediction {
@@ -25,6 +27,6 @@ export function categorizeTransaction(tx: Transaction): CategoryPrediction {
       return { category: rule.category, confidence: 0.8 };
     }
   }
-  // Default category if no rule matches
+  // Default category if no rule matched
   return { category: 'Uncategorized', confidence: 0.5 };
 }
